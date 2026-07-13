@@ -1,46 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <link rel="shortcut icon" href="foto.favicon-portifolio.png" type="image/x-icon">
-                    <title>Meu Portifólio</title>
-                    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portifólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<body>
-<main>
-   <header>
-   <div class="Cavecalho">
-         
-       <div class="foto-perfil">
-         <img src="fotogabriel/fotop.jpg" alt="Foto Gabriel">
-      </div>
-         <h1>Olá, eu sou Gabriel Fresta</h1>
-   </div>
+  <body>
+    <main>
+      <header>
+        <div class="cabecalho">
+          <div class="foto-perfil">
+            <img src="fotogabriel/fotop.jpg" alt="Foto Gabriel" />
+          </div>
+          <h1>Olá, eu sou Gabriel Fresta</h1>
+          <p class="subtitulo">
+            Estudante de ADS | Desenvolvedor FullStack em Formação
+          </p>
+        </div>
+      </header>
+      <section class="sobre">
+        <h2>Sobre mim</h2>
+        <p>
+          Sou estudante de Análise e Desenvolvimento de Sistemas pela
+          Universidade Candido Mendes. Tenho cursos em HTML5, CSS3 e JavaScript.
+        </p>
 
-   </header>
-   <section class="sobre" >
-    <h2>Sobre mim</h2>
-    <p>Sou estudante de Análise e Desenvolvimento de Sistemas pela Universidade Candido Mendes. Tenho cursos em HTML5, CSS3 e JavaScript.</p>
-   
-       <p>Sou apaixonado por tecnologia e estou me preparando para atuar como desenvolvedor. Busco sempre me aperfeiçoar e adquirir novos conhecimentos. </p>
-   <section class="contatos">
-      <h2>Contato:</h2>
-       <ul>
-   <li><i class="fas fa-envelope"></i> gabrielfrestaalves@gmail.com
-   <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/gabriel-fresta-345117207/" target="_blank"  real="external"> Acesse o meu perfil do LinkedIn.</a></li>
-    <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/gabrielfresta/" target="_blank" real="external" >Acesse o meu instagram.</a>
-     <li><i class="fab fa-github" ></i><a href="https://github.com/GabrielFresta" target="_blank" >Acesse meu GitHub</a>
-    </ul>
-   </section>
-   <footer>
-    <p>&copy; 2025 Gabriel Fresta</p>
-   </footer>
-</main>
+        <p>
+          Sou apaixonado por tecnologia e estou me preparando para atuar como
+          desenvolvedor. Busco sempre me aperfeiçoar e adquirir novos
+          conhecimentos.
+        </p>
+      </section>
+      <section class="skills">
+        <h2>Tecnologias</h2>
 
-    
-</body>
+        <ul class="lista-skills">
+          <li><i class="fa-brands fa-html5"></i> HTML5</li>
+
+          <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+
+          <li><i class="fa-brands fa-js"></i> JavaScript</li>
+
+          <li><i class="fa-brands fa-git-alt"></i> Git</li>
+
+          <li><i class="fa-brands fa-github"></i> GitHub</li>
+        </ul>
+      </section>
+
+      <section class="projetos">
+        <h2>Projetos</h2>
+        <div class="grid-projetos">
+          <article class="card-projeto">
+            <h3>Lista de nomes</h3>
+            <p>
+              Este é um projeto prático que desenvolvi para treinar meus
+              fundamentos de desenvolvimento web e aplicar o que estou
+              aprendendo. O objetivo principal foi criar um sistema simples de
+              gerenciamento de nomes para consolidar conceitos de manipulação de
+              tela e armazenamento no navegador.
+            </p>
+
+            <div class="tags-projeto">
+              <span class="tag html">HTML5</span>
+              <span class="tag css">CSS3</span>
+              <span class="tag js">JavaScript</span>
+            </div>
+
+            <a
+              href="https://gabrielfresta.github.io/listas-de-nomes/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Ver no GitHub</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="contatos">
+        <h2>Contato:</h2>
+        <p class="email">
+          <i class="fas fa-envelope"> gabrielfrestaalves@gmail.com</i>
+        </p>
+        <div class="redes-sociais">
+          <a
+            href="https://www.linkedin.com/in/gabriel-fresta-345117207/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="icone-social"
+            aria-label="linkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+
+          <a
+            href="https://www.instagram.com/gabrielfresta/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="icone-social"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <a
+            href="https://github.com/GabrielFresta"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="icone-social"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </section>
+      <footer>
+        <p>&copy; 2025 Gabriel Fresta</p>
+      </footer>
+    </main>
+  </body>
 </html>
