@@ -3,136 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Portifólio</title>
+    <title>Gabriel Fresta | Desenvolvedor FullStack em formação</title>
+    <meta
+      name="description"
+      content="Portfólio de Gabriel Fresta, estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor FullStack em formação."
+    />
+    <link rel="icon" type="image/png" href="foto_favicon-portifolio.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <main>
-      <header>
-        <div class="cabecalho">
-          <div class="foto-perfil">
-            <img src="fotogabriel/fotop.jpg" alt="Foto Gabriel" />
+    <header class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-texto">
+          <p class="status"><span class="ponto"></span>Buscando estágio em desenvolvimento</p>
+          <h1>Gabriel Fresta</h1>
+          <p class="lead">
+            Estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor
+            FullStack em formação. Construo aplicações web com JavaScript e
+            estou começando a integrar IA nos meus projetos.
+          </p>
+          <div class="acoes">
+            <a class="btn btn-principal" href="#projetos">Ver projetos</a>
+            <a class="btn btn-claro" href="curriculo.pdf" download>Baixar currículo</a>
           </div>
-          <h1>Olá, eu sou Gabriel Fresta</h1>
-          <p class="subtitulo">
-            Estudante de ADS | Desenvolvedor FullStack em Formação
+        </div>
+        <img class="foto" src="fotogabriel/fotop.jpg" alt="Foto de Gabriel Fresta" />
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="bloco" id="sobre">
+        <h2>Sobre mim</h2>
+        <div class="texto">
+          <p>
+            Cursando Análise e Desenvolvimento de Sistemas na Universidade
+            Candido Mendes (UCAM). Já fiz cursos de HTML5, CSS3 e JavaScript e
+            hoje faço um curso FullStack focado em JavaScript.
+          </p>
+          <p>
+            Estou montando projetos pessoais para praticar o que aprendo, e o
+            próximo passo é criar aplicações que usam modelos de linguagem
+            (LLMs) por meio de APIs.
           </p>
         </div>
-      </header>
-      <section class="sobre">
-        <h2>Sobre mim</h2>
-        <p>
-          Sou estudante de Análise e Desenvolvimento de Sistemas pela
-          Universidade Candido Mendes. Tenho cursos em HTML5, CSS3 e JavaScript.
-        </p>
-
-        <p>
-          Sou apaixonado por tecnologia e estou me preparando para atuar como
-          desenvolvedor. Busco sempre me aperfeiçoar e adquirir novos
-          conhecimentos.
-        </p>
       </section>
-      <section class="skills">
+
+      <section class="bloco" id="tecnologias">
         <h2>Tecnologias</h2>
-
-        <ul class="lista-skills">
-          <li><i class="fa-brands fa-html5"></i> HTML5</li>
-
-          <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
-
-          <li><i class="fa-brands fa-js"></i> JavaScript</li>
-
-          <li><i class="fa-brands fa-git-alt"></i> Git</li>
-
-          <li><i class="fa-brands fa-github"></i> GitHub</li>
-        </ul>
+        <div class="grupos">
+          <div>
+            <h3>Front-end</h3>
+            <ul class="chips">
+              <li><i class="fa-brands fa-html5"></i> HTML5</li>
+              <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+              <li><i class="fa-brands fa-js"></i> JavaScript</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Ferramentas</h3>
+            <ul class="chips">
+              <li><i class="fa-brands fa-git-alt"></i> Git</li>
+              <li><i class="fa-brands fa-github"></i> GitHub</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Em estudo</h3>
+            <ul class="chips chips-estudo">
+              <li><i class="fa-solid fa-database"></i> SQL</li>
+              <li><i class="fa-solid fa-server"></i> Back-end</li>
+              <li><i class="fa-solid fa-robot"></i> APIs de IA</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <section class="projetos">
+      <section class="bloco" id="projetos">
         <h2>Projetos</h2>
-        <div class="grid-projetos">
-          <article class="card-projeto">
-            <h3>Lista de nomes</h3>
-            <p>
-              Este é um projeto prático que desenvolvi para treinar meus
-              fundamentos de desenvolvimento web e aplicar o que estou
-              aprendendo. O objetivo principal foi criar um sistema simples de
-              gerenciamento de nomes para consolidar conceitos de manipulação de
-              tela e armazenamento no navegador.
-            </p>
-
-            <div class="tags-projeto">
-              <span class="tag html">HTML5</span>
-              <span class="tag css">CSS3</span>
-              <span class="tag js">JavaScript</span>
+        <div class="lista-projetos">
+          <article class="projeto">
+            <div class="miniatura"><img src="img/extrato.webp" alt="Captura de tela do projeto Extrato Financeiro" loading="lazy" width="800" height="500" /></div>
+            <div class="projeto-corpo">
+              <h3>Extrato Financeiro</h3>
+              <p>Aplicação para controle de finanças pessoais com gráficos e armazenamento local.</p>
+              <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+              <div class="links"><a href="https://extrato-app-gabriel3-abf3.vercel.app" target="_blank" rel="noopener noreferrer">Ver ao vivo</a><a href="https://github.com/GabrielFresta/extrato-app" target="_blank" rel="noopener noreferrer">Ver código</a></div>
             </div>
-
-            <a
-              href="https://github.com/GabrielFresta/listas-de-nomes"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Ver código</a
-            >
-
-            <a
-              href="https://gabrielfresta.github.io/listas-de-nomes/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Ver projeto</a
-            >
           </article>
+          <article class="projeto">
+            <div class="miniatura"><img src="img/jurisflow.webp" alt="Captura de tela do projeto JurisFlow" loading="lazy" width="800" height="500" /></div>
+            <div class="projeto-corpo">
+              <h3>JurisFlow</h3>
+              <p>Sistema de gestão visual de processos jurídicos (Kanban) com persistência local e validação de formulários.</p>
+              <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+              <div class="links"><a href="https://gabrielfresta.github.io/jurisflow-app/" target="_blank" rel="noopener noreferrer">Ver ao vivo</a><a href="https://github.com/GabrielFresta/jurisflow-app" target="_blank" rel="noopener noreferrer">Ver código</a></div>
+            </div>
+          </article>
+          <article class="projeto">
+            <div class="miniatura"><img src="img/instagram.webp" alt="Captura de tela do projeto Clone do Instagram" loading="lazy" width="800" height="500" /></div>
+            <div class="projeto-corpo">
+              <h3>Clone do Instagram</h3>
+              <p>Projeto em JavaScript puro, focado em manipulação do DOM, estilização e experiência do usuário.</p>
+              <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+              <div class="links"><a href="https://gabrielfresta.github.io/projeto-clone-instagram/" target="_blank" rel="noopener noreferrer">Ver ao vivo</a><a href="https://github.com/GabrielFresta/projeto-clone-instagram" target="_blank" rel="noopener noreferrer">Ver código</a></div>
+            </div>
+          </article>
+          <article class="projeto">
+            <div class="miniatura"><img src="img/lista-nomes.webp" alt="Captura de tela do projeto Lista de Nomes" loading="lazy" width="800" height="500" /></div>
+            <div class="projeto-corpo">
+              <h3>Lista de Nomes</h3>
+              <p>Aplicação web para cadastro e listagem em tempo real, usando localStorage para guardar os dados.</p>
+              <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+              <div class="links"><a href="https://gabrielfresta.github.io/listas-de-nomes/" target="_blank" rel="noopener noreferrer">Ver ao vivo</a><a href="https://github.com/GabrielFresta/listas-de-nomes" target="_blank" rel="noopener noreferrer">Ver código</a></div>
+            </div>
+          </article>
+          <!-- COPIE um bloco acima para adicionar um novo projeto -->
         </div>
       </section>
 
-      <section class="contatos">
-        <h2>Contato:</h2>
-        <p class="email">
-          <i class="fas fa-envelope"> gabrielfrestaalves@gmail.com</i>
-        </p>
-        <div class="redes-sociais">
-          <a
-            href="https://www.linkedin.com/in/gabriel-fresta-345117207/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="icone-social"
-            aria-label="linkedIn"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-
-          <a
-            href="https://www.instagram.com/gabrielfresta/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="icone-social"
-            aria-label="Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-
-          <a
-            href="https://github.com/GabrielFresta"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="icone-social"
-            aria-label="GitHub"
-            ><i class="fab fa-github"></i
-          ></a>
+      <section class="bloco" id="contato">
+        <h2>Contato</h2>
+        <p class="texto">Aberto a conversas sobre estágio e projetos.</p>
+        <div class="contatos">
+          <a href="mailto:gabrielfrestaalves@gmail.com"><i class="fas fa-envelope"></i> gabrielfrestaalves@gmail.com</a>
+          <a href="https://www.linkedin.com/in/gabriel-fresta-345117207/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/GabrielFresta" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
         </div>
       </section>
-      <footer>
-        <p>&copy; 2025 Gabriel Fresta</p>
-      </footer>
     </main>
+
+    <footer>
+      <p>&copy; 2026 Gabriel Fresta</p>
+    </footer>
   </body>
 </html>
